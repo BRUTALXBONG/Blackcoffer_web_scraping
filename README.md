@@ -54,3 +54,16 @@ AVG WORD LENGTH
 
 Check out the output data structure spreadsheet for the format of your output, i.e. “Output Data Structure.xlsx”.
 
+## How I approached the solution?
+I began by examining the dataset and reviewing the tasks assigned. Subsequently, I downloaded the dataset and imported it into my Jupyter Notebook Python environment from an input Excel file. My initial step involved data extraction, where I utilized libraries such as Pandas,Numy for data manipulation and Beautiful Soup to scrape data from each URL. I then organized the extracted information into separate columns within the Excel file. Following the extraction process, I identified and extracted all relevant text elements from the URLs, storing this data in individual columns adjacent to their respective rows. 
+
+Proceeding to data preprocessing, I focused on cleaning the extracted text, which included tasks such as removing stop words and symbols.
+
+Subsequently, I got into the main analysis phase. This involved loading the dataset and referencing a master directory containing positive and negative words. For each extracted word, I compared it against both positive and negative word lists. Whenever a match was found, I incremented the respective positive and negative counters.
+
+These positive and negative scores were then recorded in dedicated columns within each row of the dataset. Additionally, I implemented defined functions to compute various metrics and derived values. These functions included calculating polarity scores, subjectivity scores, and derived metrics such as the count of  words, average word length, and average words per sentence etc
+
+Overall, this structured approach facilitated comprehensive analysis and yielded valuable insights from the dataset.
+
+
+
